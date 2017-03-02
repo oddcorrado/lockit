@@ -20,6 +20,11 @@ exports.accountLockedTime = '20 minutes';
 // send html to client (false) or only json (true)
 exports.rest = false;
 
+// identification settings
+exports.uniqueName = true;
+exports.useExtra = false;
+exports.extra = {};
+
 // signup settings
 exports.signup = {
   route: '/signup',

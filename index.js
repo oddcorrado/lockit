@@ -6,11 +6,11 @@ var util = require('util');
 var express = require('express');
 var chalk = require('chalk');
 var extend = require('node.extend');
-var Signup = require('lockit-signup');
-var Login = require('lockit-login');
+var Signup = require('../lockit-signup');
+var Login = require('../lockit-login');
 var ForgotPassword = require('lockit-forgot-password');
-var DeleteAccount = require('lockit-delete-account');
-var utils = require('lockit-utils');
+var DeleteAccount = require('../lockit-delete-account');
+var utils = require('../lockit-utilities');
 var configDefault = require('./config.default.js');
 
 
