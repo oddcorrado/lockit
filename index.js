@@ -134,8 +134,12 @@ Lockit.prototype.rest = function() {
     this.config.login.logoutRoute,
     this.config.forgotPassword.route,
     this.config.forgotPassword.route + '/:token',
-    this.config.deleteAccount.route
+    this.config.deleteAccount.route,
   ];
+
+  if(this.config.extraRestRoutes) {
+    routes = routes.concat(this.config.extraRestRoutes)
+  }
 
   routes.forEach(function(route) {
     that.router.get(route, function(req, res) {
