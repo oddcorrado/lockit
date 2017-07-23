@@ -82,6 +82,10 @@ var Lockit = module.exports = function(config) {
 
   events.EventEmitter.call(this);
 
+  Lockit.prototype.passwordCheck = function (req, password, cb) {
+    return login.passwordCheck(req, password, cb)
+  }
+
 };
 
 util.inherits(Lockit, events.EventEmitter);
